@@ -4,7 +4,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-@Document("users")
+@Document("Users")
 public class Users {
 
     @Id
@@ -17,7 +17,8 @@ public class Users {
     @Field(name = "role")
     private String role;
 
-    public Users(String username, String password, String role) {
+    public Users(Long idUser, String username, String password, String role) {
+        this.idUser = idUser;
         this.username = username;
         this.password = password;
         this.role = role;

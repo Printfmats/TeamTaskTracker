@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.sql.Timestamp;
 
-@Document("tasks")
+@Document("Tasks")
 public class Tasks {
     @Id
     @Field(name = "id_task")
@@ -24,7 +24,8 @@ public class Tasks {
     @Field(name = "deadline")
     private Timestamp deadline;
 
-    public Tasks(String topic, String topicDescription, String topicComment, Timestamp lastDateOfChange, String whoChangedLast, Timestamp deadline) {
+    public Tasks(Long idTask, String topic, String topicDescription, String topicComment, Timestamp lastDateOfChange, String whoChangedLast, Timestamp deadline) {
+        this.idTask = idTask;
         this.topic = topic;
         this.topicDescription = topicDescription;
         this.topicComment = topicComment;

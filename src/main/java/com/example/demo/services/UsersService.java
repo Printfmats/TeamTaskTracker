@@ -1,13 +1,26 @@
 package com.example.demo.services;
 
-import com.example.demo.repositories.UsersReposiotry;
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class UsersService {
-    private final UsersReposiotry usersReposiotry;
+//    private final UsersRepository usersRepository;
+//
+//    @Autowired
+//    public UsersService(UsersRepository usersRepository) {
+//        this.usersRepository = usersRepository;
+//    }
+    public void addUser() {
 
-    @Autowired
-    public UsersService(UsersReposiotry usersReposiotry) {
-        this.usersReposiotry = usersReposiotry;
+    }
+
+    public void updateUser() {
+
+    }
+
+    public void getAllUsers() {
+
+    }
+
+    public void deleteUser() {
+
     }
 }
